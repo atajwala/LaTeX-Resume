@@ -1,0 +1,51 @@
+Resume template in LaTeX - Usage guidelines for OSX users only
+##############################################################
+
+Credit goes to 'David Grant' (http://www.davidgrant.ca/latex_resume_template).
+
+- Install `MacTeX` (LaTeX package) and any editor (TeXShop or textmate recommended).
+
+- Make sure the .tex file and shading.sty are under the same directory.
+
+- Run commands as shown:
+  >  latex FILENAME.tex (this produces FILENAME.dvi)
+  > dvipdf FILENAME.dvi (tada! FILENAME.pdf!)
+
+Detailed output of the steps above:
+--- START ---
+macbookpro$ ls
+resume_atajwala.tex	shading.sty
+macbookpro$ latex resume_atajwala.tex 
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010)
+ restricted \write18 enabled.
+entering extended mode
+(./resume_atajwala.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2009-06-19, ngerman-x-2009-06-19, ancientgreek, ibycus, arabic, armenian
+, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutch, u
+kenglish, usenglishmax, esperanto, estonian, farsi, finnish, french, galician, 
+german, ngerman, swissgerman, monogreek, greek, hungarian, icelandic, assamese,
+ bengali, gujarati, hindi, kannada, malayalam, marathi, oriya, panjabi, tamil, 
+telugu, indonesian, interlingua, irish, italian, kurmanji, lao, latin, latvian,
+ lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, polish, portuguese, roma
+nian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, turkish,
+ turkmen, ukrainian, uppersorbian, welsh, loaded.
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/size11.clo)) (./shading.sty)
+
+No file resume_atajwala.aux.
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/omscmr.fd) [1] [2]
+(./resume_atajwala.aux) )
+(see the transcript file for additional information)
+Output written on resume_atajwala.dvi (2 pages, 8480 bytes).
+Transcript written on resume_atajwala.log.
+macbookpro$ ls
+resume_atajwala.aux	resume_atajwala.dvi	resume_atajwala.log	resume_atajwala.tex	shading.sty
+macbookpro$ dvipdf resume_atajwala.dvi 
+macbookpro$ ls
+resume_atajwala.aux	resume_atajwala.log	resume_atajwala.tex
+resume_atajwala.dvi	resume_atajwala.pdf	shading.sty
+macbookpro$
+--- END ---
