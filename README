@@ -1,7 +1,13 @@
-Resume template in LaTeX - Usage guidelines for OSX users only
-##############################################################
+Resume template in LaTeX 
+########################
+
+Usage guidelines for OSX users only. 
+(Sorry Windows users... No, seriously, I FEEL for you)
 
 Credit goes to 'David Grant' (http://www.davidgrant.ca/latex_resume_template).
+
+Licensed under the 'Creative Commons Attribution-ShareAlike 3.0 Unported License'
+(http://creativecommons.org/licenses/by-sa/3.0/).
 
 - Install `MacTeX` (LaTeX package) and any editor (TeXShop or textmate recommended).
 
