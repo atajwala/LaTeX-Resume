@@ -25,6 +25,11 @@
 %-----------------------------------------------------------
 %\usepackage{fullpage}
 \usepackage{shading}
+\usepackage{hyperref}
+\hypersetup{
+colorlinks=true,
+urlcolor=black
+}
 %\textheight=9.0in
 \pagestyle{empty}
 \raggedbottom
@@ -48,8 +53,8 @@
 \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
 \textbf{\Large Aslam Tajwala}  & 408-316-1679\\
 93 Bettencourt Way, &  atajwala@gmail.com\\
-Milpitas, CA 95035. & http://www.aslamtajwala.com\\
-& https://www.github.com/atajwala\\
+Milpitas, CA 95035. & \url{http://www.aslamtajwala.com}\\
+& \url{https://www.github.com/atajwala}\\
 %& http://www.linkedin.com/in/atajwala\\
 \end{tabular*}
 \\
@@ -71,13 +76,13 @@ Rails 3.x, JavaScript, CSS3, HTML5, Ajax, JSON, XML
 MySQL, NoSQL (MongoDB)
 
 \item[Dabbled with:]
-JQuery, Mongrel, Content caching (Memcache)
+JQuery, Passenger, Mongrel, Content caching (Memcache)
 
 \item[Source control:]
 Git, SVN, CVS
 
 \item[Environments:]
-Unix/Linux, Amazon Web Services, Mac OSX, Solaris
+Unix/Linux, Amazon Web Services, Heroku, Mac OSX, Solaris
 
 \item[Scripting:]
 Unix shell, Applescript, Tcl/Expect
@@ -91,7 +96,18 @@ OpenSSL, HTTP, Flash, GDB, TCP/IP, Ethereal/TcpDump
 \begin{itemize}
 
 \item
-	\ressubheading{Mail2share (http://mail2share.com)}{Self contributer}{Web Programmer}{Jan. 2011 - Present}
+	\ressubheading{TweetsAround (\url{http://tweetsaround.com})}{Self contributer}{Web Programmer}{Oct. 2011 - Present}
+	\begin{itemize}
+		\resitem{Developed a Rails application that demonstrates mashing of MongoDB, Twitter API and Google Maps API.}
+		\resitem{Using the Twitter Streaming API this web-app lists tweets near a geographical location specified by the user.}
+		\resitem{A separate task continuously populates tweets to a database thats geo-spatially indexed. 
+		 		 Making the application more responsive and robust.}
+		\resitem{Uses: Rails 3.1, Mongoid gem.  Deployed on Heroku (1 web dyno and 1 worker dyno). Database hosted via MongoHQ.}
+		\resitem{Ajax based UI using JQuery. Supports all well known browsers.}
+	\end{itemize}
+
+\item
+	\ressubheading{Mail2share (\url{http://mail2share.com})}{Self contributer}{Web Programmer}{Jan. 2011 - Present}
 	\begin{itemize}
 		\resitem{Developed a RESTful Rails webapp to test the need for a social inbox.}
 		\resitem{Wrote the backend, TDD for MVC modules, handcrafted most of the UI.}
